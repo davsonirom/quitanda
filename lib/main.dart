@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:quitanda/mia/config/desing.dart';
+import 'package:quitanda/mia/credencial/login_page.dart';
 
 void main() {
   runApp(const MiaSoftware());
@@ -12,9 +14,9 @@ class MiaSoftware extends StatelessWidget {
     return MaterialApp(
       title: 'Quitanda',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Desing.corPrimariaComSwacth,
       ),
-      home: const SizedBox.shrink(),
+      home: const LoginPage(),
     );
   }
 }
