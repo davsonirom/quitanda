@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:quitanda/mia/config/desing.dart';
-import 'package:quitanda/mia/credencial/widgets/text_form.dart';
+import 'package:quitanda/mia/page/credencial/widgets/text_form.dart';
 
 class CadastroPage extends StatelessWidget {
   CadastroPage({Key? key}) : super(key: key);

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:quitanda/mia/config/desing.dart';
 import 'package:quitanda/mia/config/utilidades.dart';
 
-import 'package:quitanda/mia/modelos/item_modelo.dart';
+import 'package:quitanda/mia/model/item_modelo.dart';
 import 'package:quitanda/mia/widgest_comun/quantidade.dart';
 
 class Produto extends StatefulWidget {

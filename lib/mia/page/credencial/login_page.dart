@@ -1,9 +1,9 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:quitanda/mia/base/banca_page.dart';
+import 'package:quitanda/mia/pageTab/banca_page.dart';
 import 'package:quitanda/mia/config/desing.dart';
-import 'package:quitanda/mia/credencial/cadastro_page.dart';
-import 'package:quitanda/mia/credencial/widgets/text_form.dart';
+import 'package:quitanda/mia/page/credencial/cadastro_page.dart';
+import 'package:quitanda/mia/page/credencial/widgets/text_form.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);

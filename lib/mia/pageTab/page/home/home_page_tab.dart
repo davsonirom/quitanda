@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:quitanda/mia/home/widgets/categoria_tile.dart';
-import 'package:quitanda/mia/home/widgets/item_tile.dart';
-import '../config/mocado_data.dart' as app_data;
+import 'package:quitanda/mia/pageTab/page/home/widgets/categoria_tile.dart';
+import 'package:quitanda/mia/pageTab/page/home/widgets/item_tile.dart';
 
-import '../config/desing.dart';
+import '../../../config/mocado_data.dart' as app_data;
+
+import '../../../config/desing.dart';
 
 class HomePageTab extends StatefulWidget {
   const HomePageTab({Key? key}) : super(key: key);

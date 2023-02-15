@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quitanda/mia/config/desing.dart';
-import 'package:quitanda/mia/credencial/login_page.dart';
+import 'package:quitanda/mia/page/credencial/login_page.dart';
 
 void main() {
   runApp(const MiaSoftware());

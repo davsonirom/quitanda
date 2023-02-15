@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:quitanda/mia/config/desing.dart';
 import 'package:quitanda/mia/config/utilidades.dart';
-import 'package:quitanda/mia/modelos/sacola_modelo.dart';
-import 'package:quitanda/mia/sacola/widgets/sacola_tile.dart';
-import '../config/mocado_data.dart' as app_data;
+import 'package:quitanda/mia/model/sacola_modelo.dart';
+import 'package:quitanda/mia/pageTab/page/sacola/widgets/sacola_tile.dart';
+import '../../../config/mocado_data.dart' as app_data;
 
 class SacolaPageTab extends StatefulWidget {
   const SacolaPageTab({Key? key}) : super(key: key);
@@ -87,6 +87,7 @@ class _SacolaPageTabState extends State<SacolaPageTab> {
                     height: 40,
                     child: ElevatedButton(
                       onPressed: () async {
+                        // ignore: unused_local_variable
                         bool? resultado = await confirmaOrdemDeCompra();
                       },
                       style: ElevatedButton.styleFrom(

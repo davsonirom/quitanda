@@ -1,6 +1,6 @@
-import 'package:quitanda/mia/modelos/item_modelo.dart';
+import 'package:quitanda/mia/model/item_modelo.dart';
 
-import '../modelos/sacola_modelo.dart';
+import '../model/sacola_modelo.dart';
 
 ItemModelo maca = ItemModelo(
   nome: 'Maçã',
