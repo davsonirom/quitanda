@@ -3,7 +3,7 @@ import 'package:quitanda/mia/modelos/item_modelo.dart';
 ItemModelo maca = ItemModelo(
   nome: 'Maçã',
   image:
-      'https://fenad.org.br/wp-content/uploads/2018/05/beneficios-da-maca.jpg',
+      'https://trimais.vteximg.com.br/arquivos/ids/1042806-1000-1000/foto_original.jpg?v=638096377475430000',
   unidade: 'kg',
   preco: 2.30,
   descricao:
@@ -12,7 +12,7 @@ ItemModelo maca = ItemModelo(
 ItemModelo uva = ItemModelo(
   nome: 'Uva',
   image:
-      'https://hortifrutijardins.com.br/wp-content/uploads/2020/06/uva-niagara.jpg',
+      'https://superprix.vteximg.com.br/arquivos/ids/179168-600-600/Uva-Vitoria-Bandeja-773417.png?v=636970945188000000',
   unidade: 'cx',
   preco: 10.0,
   descricao:
@@ -21,7 +21,7 @@ ItemModelo uva = ItemModelo(
 ItemModelo banana = ItemModelo(
   nome: 'Banana',
   image:
-      'https://www.infoescola.com/wp-content/uploads/2010/04/banana_600797891-1000x670.jpg',
+      'https://frutasbrasilsul.com.br/wp-content/uploads/banana-nanica-600x599.png',
   unidade: 'kg',
   preco: 4.50,
   descricao:
@@ -30,8 +30,8 @@ ItemModelo banana = ItemModelo(
 ItemModelo abacaxi = ItemModelo(
   nome: 'Abacaxi',
   image:
-      'https://www.minicash.com.br/image/cache/catalog/img/produtos_2021/abacaxi-un-550x550.png',
-  unidade: 'Un',
+      'https://muffatosupermercados.vteximg.com.br/arquivos/ids/277374-400-400/0000000100076.png?v=637372407875030000',
+  unidade: 'un',
   preco: 2.30,
   descricao:
       'O ananás ou abacaxi é uma infrutescência tropical produzida pela planta de mesmo nome, caracterizada como uma planta monocotiledônea da família das bromeliáceas da subfamília Bromelioideae. É um símbolo das regiões tropicais e subtropicais.',
@@ -39,7 +39,7 @@ ItemModelo abacaxi = ItemModelo(
 ItemModelo pera = ItemModelo(
   nome: 'Pera',
   image:
-      'https://ibassets.com.br/ib.item.image.big/b-dbde4b5da4054c939c15c9b2fd1ef22c.png',
+      'https://trimais.vteximg.com.br/arquivos/ids/1041412-1000-1000/foto_original.jpg?v=638052459170700000',
   unidade: 'kg',
   preco: 2.30,
   descricao:
@@ -48,8 +48,8 @@ ItemModelo pera = ItemModelo(
 ItemModelo manga = ItemModelo(
   nome: 'Manga',
   image:
-      'https://static.mundoeducacao.uol.com.br/mundoeducacao/2021/05/manga.jpg',
-  unidade: 'Un',
+      'https://www.pngall.com/wp-content/uploads/2016/04/Mango-PNG-Picture.png',
+  unidade: 'un',
   preco: 1.90,
   descricao:
       'A manga é uma das frutas mais consumidas no Brasil, por ser refrescante e por causa do clima Tropical do país. Também é atraente ao mercado internacional, ficando somente atrás da banana, do abacaxi e do abacate na exportação de frutas.',
@@ -57,11 +57,20 @@ ItemModelo manga = ItemModelo(
 ItemModelo morango = ItemModelo(
   nome: 'Morango',
   image:
-      'https://portaldoorganico.com.br/wp-content/uploads/2021/04/morango.jpg',
+      'https://www.pngplay.com/wp-content/uploads/1/Strawberry-PNG-Background.png',
   unidade: 'cx',
   preco: 9.00,
   descricao:
       'O morango é uma fruta carnosa e suculenta de coloração vermelha com sabor agridoce que chama muito a atenção, porém é um fruto muito delicado',
+);
+ItemModelo ameixa = ItemModelo(
+  nome: 'Ameixa',
+  image:
+      'https://us-southeast-1.linodeobjects.com/storage/comercial-supermercado-genesio/media/uploads/produto/ameixa_rubimel_kg_38c292ff-8fab-4e1a-ace4-61450476934e.png',
+  unidade: 'kg',
+  preco: 15.00,
+  descricao:
+      'Uma ameixa é o fruto de polpa firme das variedades de Prunus domestica que têm um alto teor de sólidos solúveis e não fermentam durante a secagem',
 );
 
 //! modelos das frutas
@@ -73,6 +82,7 @@ List<ItemModelo> itens = [
   pera,
   manga,
   morango,
+  ameixa
 ];
 
 //! categorias

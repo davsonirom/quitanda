@@ -4,6 +4,7 @@ import 'package:quitanda/mia/config/desing.dart';
 import 'package:quitanda/mia/config/utilidades.dart';
 
 import 'package:quitanda/mia/modelos/item_modelo.dart';
+import 'package:quitanda/mia/produto/produto.dart';
 
 class ItemTile extends StatelessWidget {
   ItemTile({
@@ -17,50 +18,62 @@ class ItemTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Card(
-          elevation: 1,
-          color: Colors.white,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(12),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                //? imagnme
-                Expanded(
-                  child: Image.network(item.image),
-                ),
-
-                //? nome da fruta
-                Text(
-                  item.nome,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
+        GestureDetector(
+          onTap: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(builder: (c) {
+                return Produto(
+                  item: item,
+                );
+              }),
+            );
+          },
+          child: Card(
+            elevation: 2,
+            color: Colors.white.withAlpha(245),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  //? imagnme
+                  Expanded(
+                    child:
+                        Hero(tag: item.image, child: Image.network(item.image)),
                   ),
-                ),
-                Row(
-                  children: [
-                    Text(
-                      helps.precoMoeda(item.preco),
-                      style: TextStyle(
-                        color: Desing.corPrimariaComSwacth,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
+
+                  //? nome da fruta
+                  Text(
+                    item.nome,
+                    style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
                     ),
-                    Text(
-                      '/${item.unidade}',
-                      style: TextStyle(
-                          color: Desing.corContraste.withAlpha(100),
-                          fontSize: 12),
-                    )
-                  ],
-                )
-                //? preco - unidade de medida
-              ],
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        helps.precoMoeda(item.preco),
+                        style: TextStyle(
+                          color: Desing.corPrimariaComSwacth,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
+                        '/${item.unidade}',
+                        style: TextStyle(
+                            color: Desing.corContraste.withAlpha(100),
+                            fontSize: 12),
+                      )
+                    ],
+                  )
+                  //? preco - unidade de medida
+                ],
+              ),
             ),
           ),
         ),
