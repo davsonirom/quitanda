@@ -28,7 +28,7 @@ ______
 - blablabla vla
 
 ## <span style="color:rgb(201,45,146)">App</span>
-![AppMockupScreen](https://user-images.githubusercontent.com/37612961/218896535-f1ffec87-4da3-47d0-889b-d16724412938.png)
+![AppMockupScreen](https://user-images.githubusercontent.com/37612961/219017935-b40afe77-e43c-4055-8b4b-4d0a8f86c85f.png)
 
 -------
 ## Instalação

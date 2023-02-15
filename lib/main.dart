@@ -15,6 +15,7 @@ class MiaSoftware extends StatelessWidget {
       title: 'Quitanda',
       theme: ThemeData(
         primarySwatch: Desing.corPrimariaComSwacth,
+        scaffoldBackgroundColor: Colors.white.withAlpha(190),
       ),
       home: const LoginPage(),
     );
