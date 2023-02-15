@@ -1,17 +1,20 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class TextForm extends StatefulWidget {
-  const TextForm({
-    Key? key,
-    required this.label,
-    required this.icon,
-    this.eSecreto = false,
-  }) : super(key: key);
+  const TextForm(
+      {Key? key,
+      required this.label,
+      required this.icon,
+      this.eSecreto = false,
+      this.formatador})
+      : super(key: key);
 
   final String label;
   final IconData icon;
   final bool eSecreto;
+  final List<TextInputFormatter>? formatador;
 
   @override
   State<TextForm> createState() => _TextFormState();
@@ -37,6 +40,7 @@ class _TextFormState extends State<TextForm> {
     return Padding(
       padding: const EdgeInsets.only(bottom: 15),
       child: TextFormField(
+        inputFormatters: widget.formatador,
         obscureText: isObscure,
         decoration: InputDecoration(
           isDense: true,

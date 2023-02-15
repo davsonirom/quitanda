@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:quitanda/mia/config/desing.dart';
+import 'package:quitanda/mia/credencial/cadastro_page.dart';
 import 'package:quitanda/mia/credencial/widgets/text_form.dart';
 
 class LoginPage extends StatelessWidget {
@@ -149,7 +150,12 @@ class LoginPage extends StatelessWidget {
                                     color: Desing.corPrimariaComSwacth),
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20))),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.of(context)
+                                  .push(MaterialPageRoute(builder: (_) {
+                                return CadastroPage();
+                              }));
+                            },
                             child: const Text(
                               'Criar conta',
                               style: TextStyle(fontSize: 20),

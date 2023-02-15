@@ -22,13 +22,13 @@ ______
 <!-- o que  pode ser feito com este aplicativo? -->
 ## <span style="color:rgb(99,202,227)">Características</span>
 - Login
-- blablabla vla
+- Cadastro
 - blablabla vla
 - blablabla vla
 - blablabla vla
 
 ## <span style="color:rgb(201,45,146)">App</span>
-![AppMockupScreen](https://user-images.githubusercontent.com/37612961/218883503-de3e4477-87f8-458f-9974-b3e6c80d7387.png)
+![AppMockupScreen](https://user-images.githubusercontent.com/37612961/218896535-f1ffec87-4da3-47d0-889b-d16724412938.png)
 
 -------
 ## Instalação
@@ -45,6 +45,7 @@ Após clonar o repositório não esquece do "flutter pub get" para baixar as pen
 | ------ | ------ | ------ |
 | intl | Fornece facilidades de internacionalização e localização | https://pub.dev/packages/intl |
 | animated_text_kit | Coleção de algumas animações de texto legais e incríveis | https://pub.dev/packages/animated_text_kit |
+| mask_text_input_formatter | Formatam a entrada por uma determinada máscara | https://pub.dev/packages/mask_text_input_formatter |
 
 ### Compilação
 Para liberação em produção:
