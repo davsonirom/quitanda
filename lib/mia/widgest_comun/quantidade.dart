@@ -9,11 +9,13 @@ class Quantidade extends StatelessWidget {
     required this.quantidade,
     required this.medida,
     required this.quantidadeTotal,
+    this.paraRemover = false,
   }) : super(key: key);
 
   final int quantidade;
   final String medida;
   final Function(int comprar) quantidadeTotal;
+  final bool paraRemover;
 
   @override
   Widget build(BuildContext context) {
@@ -31,13 +33,18 @@ class Quantidade extends StatelessWidget {
         ],
       ),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           _BotaoDeQuantidade(
-            icone: Icons.remove,
-            cor: Colors.grey.shade300,
+            icone: !paraRemover || quantidade > 1
+                ? Icons.remove
+                : Icons.delete_forever,
+            cor: !paraRemover || quantidade > 1
+                ? Colors.grey.shade300
+                : Desing.corAlerta,
             funcao: () {
               // remover item
-              if (quantidade == 1) return;
+              if (quantidade == 1 && !paraRemover) return;
               int itemSacola = quantidade - 1;
               quantidadeTotal(itemSacola);
             },
@@ -98,6 +105,7 @@ class _BotaoDeQuantidade extends StatelessWidget {
           child: Icon(
             icone,
             size: 16,
+            color: Colors.white.withAlpha(190),
           ),
         ),
       ),

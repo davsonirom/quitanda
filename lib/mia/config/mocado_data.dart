@@ -1,5 +1,7 @@
 import 'package:quitanda/mia/modelos/item_modelo.dart';
 
+import '../modelos/sacola_modelo.dart';
+
 ItemModelo maca = ItemModelo(
   nome: 'Maçã',
   image:
@@ -93,4 +95,13 @@ List<String> categorias = [
   'Carnes',
   'Cereais',
   'Laticínios',
+];
+
+List<SacolaModelo> sacolaCheia = [
+  SacolaModelo(item: maca, quant: 3),
+  SacolaModelo(item: abacaxi, quant: 4),
+  SacolaModelo(item: morango, quant: 2),
+  SacolaModelo(item: ameixa, quant: 1),
+  SacolaModelo(item: manga, quant: 5),
+  SacolaModelo(item: pera, quant: 3),
 ];

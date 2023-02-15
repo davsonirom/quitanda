@@ -7,7 +7,7 @@ import 'package:quitanda/mia/modelos/item_modelo.dart';
 import 'package:quitanda/mia/widgest_comun/quantidade.dart';
 
 class Produto extends StatefulWidget {
-  Produto({
+  const Produto({
     Key? key,
     required this.item,
   }) : super(key: key);

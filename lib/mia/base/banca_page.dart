@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quitanda/mia/config/desing.dart';
 import 'package:quitanda/mia/home/home_page_tab.dart';
+import 'package:quitanda/mia/sacola/sacola_page_tab.dart';
 
 class BancaPage extends StatefulWidget {
   const BancaPage({Key? key}) : super(key: key);
@@ -20,8 +21,8 @@ class _BancaPageState extends State<BancaPage> {
         controller: trazerPagina,
         physics: const NeverScrollableScrollPhysics(),
         children: [
-          HomePageTab(),
-          Container(color: Colors.red),
+          const HomePageTab(),
+          SacolaPageTab(),
           Container(color: Colors.purple),
           Container(color: Colors.blue),
         ],
