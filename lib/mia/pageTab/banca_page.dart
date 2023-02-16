@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quitanda/mia/config/desing.dart';
 import 'package:quitanda/mia/pageTab/page/home/home_page_tab.dart';
+import 'package:quitanda/mia/pageTab/page/perefil/perfil_page_tabe.dart';
 import 'package:quitanda/mia/pageTab/page/sacola/sacola_page_tab.dart';
 
 class BancaPage extends StatefulWidget {
@@ -24,7 +25,7 @@ class _BancaPageState extends State<BancaPage> {
           const HomePageTab(),
           const SacolaPageTab(),
           Container(color: Colors.purple),
-          Container(color: Colors.blue),
+          const PerfilPageTabe(),
         ],
       ),
       bottomNavigationBar: ClipRRect(
