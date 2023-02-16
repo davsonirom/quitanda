@@ -115,7 +115,7 @@ class _ProdutoState extends State<Produto> {
                             ),
                           ),
                           label: const Text(
-                            'Colocar no sacola',
+                            'Colocar na sacola',
                             style: TextStyle(color: Colors.white, fontSize: 20),
                           ),
                           icon: const Icon(
