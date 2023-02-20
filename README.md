@@ -28,7 +28,7 @@ ______
 - blablabla vla
 
 ## <span style="color:rgb(201,45,146)">App</span>
-![AppMockupScreen](https://user-images.githubusercontent.com/37612961/219384593-6cd4c3b1-3ae3-41f2-b16a-472aa0f08415.png)
+![AppMockupScreen](https://user-images.githubusercontent.com/37612961/220214229-73303c67-37c7-4ec4-a507-4b85694b68af.png)
 
 -------
 ## Instalação
@@ -46,6 +46,7 @@ Após clonar o repositório não esquece do "flutter pub get" para baixar as pen
 | intl | Fornece facilidades de internacionalização e localização | https://pub.dev/packages/intl |
 | animated_text_kit | Coleção de algumas animações de texto legais e incríveis | https://pub.dev/packages/animated_text_kit |
 | mask_text_input_formatter | Formatam a entrada por uma determinada máscara | https://pub.dev/packages/mask_text_input_formatter |
+| qr_flutter | Renderização de código QR simples e rápida por meio de um Widget ou pintor personalizado. | https://pub.dev/packages/qr_flutter |
 
 ### Compilação
 Para liberação em produção:

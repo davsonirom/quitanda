@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quitanda/mia/config/desing.dart';
 import 'package:quitanda/mia/pageTab/page/home/home_page_tab.dart';
+import 'package:quitanda/mia/pageTab/page/pedido/pedido_page_tabe.dart';
 import 'package:quitanda/mia/pageTab/page/perefil/perfil_page_tabe.dart';
 import 'package:quitanda/mia/pageTab/page/sacola/sacola_page_tab.dart';
 
@@ -21,11 +22,11 @@ class _BancaPageState extends State<BancaPage> {
       body: PageView(
         controller: trazerPagina,
         physics: const NeverScrollableScrollPhysics(),
-        children: [
-          const HomePageTab(),
-          const SacolaPageTab(),
-          Container(color: Colors.purple),
-          const PerfilPageTabe(),
+        children: const [
+          HomePageTab(),
+          SacolaPageTab(),
+          PedidoPageTabe(),
+          PerfilPageTabe(),
         ],
       ),
       bottomNavigationBar: ClipRRect(

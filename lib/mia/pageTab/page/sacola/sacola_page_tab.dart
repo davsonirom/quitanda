@@ -3,6 +3,7 @@ import 'package:quitanda/mia/config/desing.dart';
 import 'package:quitanda/mia/config/utilidades.dart';
 import 'package:quitanda/mia/model/sacola_modelo.dart';
 import 'package:quitanda/mia/pageTab/page/sacola/widgets/sacola_tile.dart';
+import 'package:quitanda/mia/widgest_comun/pagamento_qr_code.dart';
 import '../../../config/mocado_data.dart' as app_data;
 
 class SacolaPageTab extends StatefulWidget {
@@ -87,8 +88,18 @@ class _SacolaPageTabState extends State<SacolaPageTab> {
                     height: 40,
                     child: ElevatedButton(
                       onPressed: () async {
-                        // ignore: unused_local_variable
                         bool? resultado = await confirmaOrdemDeCompra();
+                        if (context.mounted) {
+                          if (resultado ?? false) {
+                            showDialog(
+                                context: context,
+                                builder: (_) {
+                                  return PagamentoQrCode(
+                                    pedido: app_data.pedidos.first,
+                                  );
+                                });
+                          }
+                        }
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Desing.corContraste,
@@ -138,7 +149,7 @@ class _SacolaPageTabState extends State<SacolaPageTab> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                 ),
-                onPressed: () {
+                onPressed: () async {
                   Navigator.of(context).pop(true);
                 },
                 child: const Text(

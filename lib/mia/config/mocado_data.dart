@@ -1,4 +1,5 @@
 import 'package:quitanda/mia/model/item_modelo.dart';
+import 'package:quitanda/mia/model/pedido_modelo.dart';
 
 import '../model/sacola_modelo.dart';
 
@@ -97,6 +98,7 @@ List<String> categorias = [
   'Laticínios',
 ];
 
+//! lista de pedidos
 List<SacolaModelo> sacolaCheia = [
   SacolaModelo(item: maca, quant: 3),
   SacolaModelo(item: abacaxi, quant: 4),
@@ -104,4 +106,126 @@ List<SacolaModelo> sacolaCheia = [
   SacolaModelo(item: ameixa, quant: 1),
   SacolaModelo(item: manga, quant: 5),
   SacolaModelo(item: pera, quant: 3),
+];
+
+List<PedidoModelo> pedidos = [
+  // Pedido 01
+  PedidoModelo(
+    copyPix: 'TOO6002',
+    pedidoRealizadoEm: DateTime.parse(
+      '2023-06-08 10:00:10.458',
+    ),
+    qrcodeVencido: DateTime.parse(
+      '2023-06-08 11:00:10.458',
+    ),
+    id: 'KIT5943',
+    status: 'pagamento_pendente',
+    total: 22.60,
+    itens: [
+      SacolaModelo(
+        item: maca,
+        quant: 2,
+      ),
+      SacolaModelo(
+        item: morango,
+        quant: 2,
+      ),
+    ],
+  ),
+
+  // Pedido 02
+  PedidoModelo(
+    copyPix: 'TSR6532',
+    pedidoRealizadoEm: DateTime.parse(
+      '2023-06-08 10:00:10.458',
+    ),
+    qrcodeVencido: DateTime.parse(
+      '2023-06-08 11:00:10.458',
+    ),
+    id: 'TOO6002',
+    status: 'entregue',
+    total: 4.50,
+    itens: [
+      SacolaModelo(
+        item: banana,
+        quant: 1,
+      ),
+    ],
+  ),
+  // Pedido 03
+  PedidoModelo(
+    copyPix: 'q1w2e3r4t5y6',
+    pedidoRealizadoEm: DateTime.parse(
+      '2023-06-08 10:00:10.458',
+    ),
+    qrcodeVencido: DateTime.parse(
+      '2023-06-08 11:00:10.458',
+    ),
+    id: 'IOS3022',
+    status: 'pagamento_recusado',
+    total: 11.5,
+    itens: [
+      SacolaModelo(
+        item: banana,
+        quant: 1,
+      ),
+    ],
+  ),
+  // Pedido 04
+  PedidoModelo(
+    copyPix: 'q1w2e3r4t5y6',
+    pedidoRealizadoEm: DateTime.parse(
+      '2023-06-08 10:00:10.458',
+    ),
+    qrcodeVencido: DateTime.parse(
+      '2023-06-08 11:00:10.458',
+    ),
+    id: 'ARE1020',
+    status: 'preparando_pedido',
+    total: 11.5,
+    itens: [
+      SacolaModelo(
+        item: banana,
+        quant: 1,
+      ),
+    ],
+  ),
+  // Pedido 05
+  PedidoModelo(
+    copyPix: 'q1w2e3r4t5y6',
+    pedidoRealizadoEm: DateTime.parse(
+      '2023-06-08 10:00:10.458',
+    ),
+    qrcodeVencido: DateTime.parse(
+      '2023-06-08 11:00:10.458',
+    ),
+    id: 'OPS6606',
+    status: 'enviado',
+    total: 11.5,
+    itens: [
+      SacolaModelo(
+        item: banana,
+        quant: 1,
+      ),
+    ],
+  ),
+  // Pedido 06
+  PedidoModelo(
+    copyPix: 'q1w2e3r4t5y6',
+    pedidoRealizadoEm: DateTime.parse(
+      '2023-06-08 10:00:10.458',
+    ),
+    qrcodeVencido: DateTime.parse(
+      '2023-06-08 11:00:10.458',
+    ),
+    id: 'COP4403',
+    status: 'pagamento_recusado',
+    total: 11.5,
+    itens: [
+      SacolaModelo(
+        item: banana,
+        quant: 1,
+      ),
+    ],
+  ),
 ];
