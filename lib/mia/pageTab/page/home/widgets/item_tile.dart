@@ -1,8 +1,8 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:quitanda/mia/config/desing.dart';
 import 'package:quitanda/mia/config/utilidades.dart';
-
 import 'package:quitanda/mia/model/item_modelo.dart';
 import 'package:quitanda/mia/page/produto/produto.dart';
 
@@ -10,10 +10,13 @@ class ItemTile extends StatelessWidget {
   ItemTile({
     Key? key,
     required this.item,
+    required this.cartAnimationMethod,
   }) : super(key: key);
 
   final ItemModelo item;
   final Utilidades helps = Utilidades();
+  final void Function(GlobalKey) cartAnimationMethod;
+  final GlobalKey imageGk = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -41,8 +44,15 @@ class ItemTile extends StatelessWidget {
                 children: [
                   //? imagnme
                   Expanded(
-                    child:
-                        Hero(tag: item.image, child: Image.network(item.image)),
+                    child: Hero(
+                      tag: item.image,
+                      child: Container(
+                        key: imageGk,
+                        child: Image.network(
+                          item.image,
+                        ),
+                      ),
+                    ),
                   ),
 
                   //? nome da fruta
@@ -81,7 +91,9 @@ class ItemTile extends StatelessWidget {
             top: 4,
             right: 4,
             child: GestureDetector(
-              onTap: () {},
+              onTap: () {
+                cartAnimationMethod(imageGk);
+              },
               child: Container(
                 height: 40,
                 width: 35,

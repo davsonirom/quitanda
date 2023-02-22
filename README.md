@@ -47,6 +47,7 @@ Após clonar o repositório não esquece do "flutter pub get" para baixar as pen
 | animated_text_kit | Coleção de algumas animações de texto legais e incríveis | https://pub.dev/packages/animated_text_kit |
 | mask_text_input_formatter | Formatam a entrada por uma determinada máscara | https://pub.dev/packages/mask_text_input_formatter |
 | qr_flutter | Renderização de código QR simples e rápida por meio de um Widget ou pintor personalizado. | https://pub.dev/packages/qr_flutter |
+| add_to_cart_animation | Animação de colocar item no carrinho (sacola) | https://pub.dev/packages/add_to_cart_animation |
 
 ### Compilação
 Para liberação em produção:
