@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quitanda/mia/config/desing.dart';
-import 'package:quitanda/mia/page/credencial/login_page.dart';
+import 'package:quitanda/mia/page/spalsh/splash_page.dart';
 
 void main() {
   runApp(const MiaSoftware());
@@ -17,7 +17,7 @@ class MiaSoftware extends StatelessWidget {
         primarySwatch: Desing.corPrimariaComSwacth,
         scaffoldBackgroundColor: Colors.white.withAlpha(190),
       ),
-      home: const LoginPage(),
+      home: const SplashPage(),
     );
   }
 }
