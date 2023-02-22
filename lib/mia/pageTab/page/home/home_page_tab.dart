@@ -4,6 +4,7 @@ import 'package:quitanda/mia/config/utilidades.dart';
 import 'package:quitanda/mia/pageTab/page/home/widgets/categoria_tile.dart';
 import 'package:quitanda/mia/pageTab/page/home/widgets/item_tile.dart';
 import 'package:quitanda/mia/pageTab/page/sacola/sacola_page_tab.dart';
+import 'package:shimmer/shimmer.dart';
 
 import '../../../config/mocado_data.dart' as app_data;
 
@@ -30,6 +31,8 @@ class _HomePageTabState extends State<HomePageTab> {
     cartKey.currentState!.runCartAnimation(_cartQuantityItems.toString());
     utilidades.exibirToast('Item colocado na sacola!!');
   }
+
+  bool carregando = true;
 
   @override
   Widget build(BuildContext context) {
@@ -145,21 +148,50 @@ class _HomePageTabState extends State<HomePageTab> {
                   itemCount: app_data.categorias.length),
             ),
             Expanded(
-              child: GridView.builder(
-                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                  physics: const BouncingScrollPhysics(),
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      mainAxisSpacing: 10,
-                      crossAxisSpacing: 10,
-                      childAspectRatio: 9 / 11.5),
-                  itemCount: app_data.itens.length,
-                  itemBuilder: (_, index) {
-                    return ItemTile(
-                      item: app_data.itens[index],
-                      cartAnimationMethod: itemSelectCartAnimations,
-                    );
-                  }),
+              child: carregando
+                  ? GridView.builder(
+                      padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                      physics: const BouncingScrollPhysics(),
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        mainAxisSpacing: 10,
+                        crossAxisSpacing: 10,
+                        childAspectRatio: 9 / 11.5,
+                      ),
+                      itemCount: app_data.itens.length,
+                      itemBuilder: (_, index) {
+                        return ItemTile(
+                          item: app_data.itens[index],
+                          cartAnimationMethod: itemSelectCartAnimations,
+                        );
+                      },
+                    )
+                  : Shimmer.fromColors(
+                      baseColor: Desing.corPrimariaComSwacth.shade100,
+                      highlightColor: Desing.corContraste.withAlpha(30),
+                      child: GridView.count(
+                        padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                        physics: const BouncingScrollPhysics(),
+                        crossAxisCount: 2,
+                        mainAxisSpacing: 10,
+                        crossAxisSpacing: 10,
+                        childAspectRatio: 9 / 11.5,
+                        children: List.generate(
+                          10,
+                          (index) => Card(
+                              elevation: 2,
+                              color: Colors.white.withAlpha(245),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: SizedBox(
+                                height: 200,
+                                width: 100,
+                              )),
+                        ),
+                      ),
+                    ),
             ),
           ],
         ),

@@ -23,12 +23,21 @@ ______
 ## <span style="color:rgb(99,202,227)">Características</span>
 - Login
 - Cadastro
-- blablabla vla
-- blablabla vla
-- blablabla vla
+   - Recuperação de senha
+- Produtos
+   - Categorias
+   - Detalhes do produto
+- Sacola "carrinho"
+   - acrescentar produto
+   - remover produto
+- Lista de pedidos
+   - Status da compra
+- Pagamento
+   - Apresentação do código PIX
+
 
 ## <span style="color:rgb(201,45,146)">App</span>
-![AppMockupScreen](https://user-images.githubusercontent.com/37612961/220214229-73303c67-37c7-4ec4-a507-4b85694b68af.png)
+![AppMockupScreen](https://user-images.githubusercontent.com/37612961/220760598-b98d7d6d-808a-47b3-a693-31b1924692a6.png)
 
 -------
 ## Instalação
@@ -50,6 +59,7 @@ Após clonar o repositório não esquece do "flutter pub get" para baixar as pen
 | add_to_cart_animation | Animação de colocar item no carrinho (sacola) | https://pub.dev/packages/add_to_cart_animation |
 | fluttertoast | Toast, mensagens informativas ao usuáio  | https://pub.dev/packages/fluttertoast|
 | flutter_launcher_icons | Icone do app  | https://pub.dev/packages/flutter_launcher_icons |
+| shimmer | Efeito de carregamento direto no widget | https://pub.dev/packages/shimmer |
 
 ### Compilação
 Para liberação em produção:
@@ -74,10 +84,10 @@ Este é um ponto de partida para uma aplicação Flutter. Alguns recursos para v
 Para obter ajuda para começar com o desenvolvimento do Flutter, consulte a [documentação online](https://docs.flutter.dev/), que oferece tutoriais, amostras, orientação sobre desenvolvimento para dispositivos móveis e uma referência completa de API.
 
 ----
-# License
+<!-- # License
 MIT
 
-**Software Livre!**
+**Software Livre!** -->
 
 [//]: # (Estes são links de referência usados ​​no corpo desta nota e são removidos quando o processador de remarcação faz seu trabalho. Não há necessidade de formatar bem porque não deve ser visto. Obrigado SO - http: //stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
