@@ -1,5 +1,6 @@
 import 'package:add_to_cart_animation/add_to_cart_animation.dart';
 import 'package:flutter/material.dart';
+import 'package:quitanda/mia/config/utilidades.dart';
 import 'package:quitanda/mia/pageTab/page/home/widgets/categoria_tile.dart';
 import 'package:quitanda/mia/pageTab/page/home/widgets/item_tile.dart';
 import 'package:quitanda/mia/pageTab/page/sacola/sacola_page_tab.dart';
@@ -21,10 +22,13 @@ class _HomePageTabState extends State<HomePageTab> {
   late Function(GlobalKey) runAddToCartAnimation;
   var _cartQuantityItems = 0;
 
+  final Utilidades utilidades = Utilidades();
+
   void itemSelectCartAnimations(GlobalKey gkImage) async {
     await runAddToCartAnimation(gkImage);
     ++_cartQuantityItems;
     cartKey.currentState!.runCartAnimation(_cartQuantityItems.toString());
+    utilidades.exibirToast('Item colocado na sacola!!');
   }
 
   @override
