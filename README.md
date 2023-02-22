@@ -48,7 +48,8 @@ Após clonar o repositório não esquece do "flutter pub get" para baixar as pen
 | mask_text_input_formatter | Formatam a entrada por uma determinada máscara | https://pub.dev/packages/mask_text_input_formatter |
 | qr_flutter | Renderização de código QR simples e rápida por meio de um Widget ou pintor personalizado. | https://pub.dev/packages/qr_flutter |
 | add_to_cart_animation | Animação de colocar item no carrinho (sacola) | https://pub.dev/packages/add_to_cart_animation |
-| fluttertoast | Toast, mensagens informativas ao usuáio | https://pub.dev/packages/fluttertoast|
+| fluttertoast | Toast, mensagens informativas ao usuáio  | https://pub.dev/packages/fluttertoast|
+| flutter_launcher_icons | Icone do app  | https://pub.dev/packages/flutter_launcher_icons |
 
 ### Compilação
 Para liberação em produção:
