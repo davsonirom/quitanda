@@ -37,7 +37,10 @@ class _BancaPageState extends State<BancaPage> {
           onTap: (index) {
             setState(() {
               pagina = index;
-              trazerPagina.jumpToPage(pagina);
+              // trazerPagina.jumpToPage(pagina);
+              trazerPagina.animateToPage(pagina,
+                  duration: const Duration(milliseconds: 500),
+                  curve: Curves.ease);
             });
           },
           type: BottomNavigationBarType.fixed,
